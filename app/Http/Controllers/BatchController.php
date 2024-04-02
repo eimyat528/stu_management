@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\RedirectResponse;
+use App\Models\Batch;
+use App\Models\Course;
+use Illuminate\View\View;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use App\Models\Batch;
-use Illuminate\View\View;
+use Illuminate\Http\RedirectResponse;
 
 class BatchController extends Controller
 {
@@ -15,7 +16,7 @@ class BatchController extends Controller
      */
     public function index(): View
     {
-        $batches = Course::all();
+        $batches = Batch::all();
         return view ('batches.index')->with('batches', $batches);
     }
 
@@ -24,7 +25,8 @@ class BatchController extends Controller
      */
     public function create(): View
     {
-        return view('batches.create');
+        $courses = Course::pluck('name','id');
+        return view('batches.create',compact('courses'));
     }
 
     /**

@@ -12,4 +12,9 @@ class Batch extends Model
     protected $primaryKey = 'id';
 
     protected $fillable = ['name', 'course_id', 'start_date'];
+
+    public function course()
+    {
+        return $this ->belongsTo(Course::class);
+    }
 }

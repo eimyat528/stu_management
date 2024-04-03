@@ -3,7 +3,7 @@
 
                 <div class="card">
                     <div class="card-header">
-                        <h2>Batches Page</h2>
+                        <h2>Batches</h2>
                     </div>
                     <div class="card-body">
                         <a href="{{ url('/batches/create') }}" class="btn btn-success btn-sm" title="Add New Course">
@@ -27,7 +27,7 @@
                                     <tr>
                                         <td>{{ $loop->iteration }}</td>
                                         <td>{{ $item->name }}</td>
-                                        <td>{{ $item->course_id }}</td>
+                                        <td>{{ $item->course ->name }}</td>
                                         <td>{{ $item->start_date }}</td>
  
                                         <td>

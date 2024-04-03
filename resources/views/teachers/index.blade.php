@@ -3,7 +3,7 @@
  
                 <div class="card">
                     <div class="card-header">
-                        <h2>Teacher </h2>
+                        <h2>Teachers </h2>
                     </div>
                     <div class="card-body">
                         <a href="{{ url('/teachers/create') }}" class="btn btn-success btn-sm" title="Add New Student">

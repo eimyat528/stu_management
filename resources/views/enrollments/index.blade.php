@@ -3,7 +3,7 @@
 
                 <div class="card">
                     <div class="card-header">
-                        <h2>Enrollment Page</h2>
+                        <h2>Enrollments</h2>
                     </div>
                     <div class="card-body">
                         <a href="{{ url('/enrollments/create') }}" class="btn btn-success btn-sm" title="Add New Course">

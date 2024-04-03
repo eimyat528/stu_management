@@ -27,9 +27,9 @@
 
         /* Active/current link */
         .sidebar a.active {
-        background-color: #04AA6D;
+        background-color: #28a745;
         color: white;
-        }
+    }
 
         /* Links on mouse-over */
         .sidebar a:hover:not(.active) {
@@ -69,7 +69,7 @@
         <div class="row">
             <div class="col-md-12">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <h2 class="navbar-brand" href="#">Student Management Project</h2>
+                <h2 class="navbar-brand" href="#">JMC Language Center</h2>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -86,7 +86,7 @@
                 <a href="{{url('/courses') }}">Courses</a>
                 <a href="{{url('/batches') }}">Batches</a>
                 <a href="{{url('/enrollments') }}">Enrollment</a>
-                <a href="#contact">Payment</a>
+                <a href="{{url('/payments') }}">Payment</a>
 
                 </div>
             </div>
